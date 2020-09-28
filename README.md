@@ -5,4 +5,4 @@ dllmain.cpp을 필요에 따라 적당히 수정하고 빌드한 뒤, 디버깅(
 마이크로소프트에서 개발한 Detours 라이브러리를 이용해 인라인 함수 후킹 방식으로 구현했습니다.  
   
 아래는 dll 인젝터 다운로드 링크입니다.  
-https://github.com/DarthTon/Xenos/releases/tag/2.3.2
+https://github.com/DarthTon/Xenos/releases/latest
