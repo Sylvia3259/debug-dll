@@ -18,7 +18,7 @@ DWORD WriteLog(LPCTSTR lpszFormat, ...) {
 }
 
 BOOL WINAPI DetourFunc(HDC hdc, int x, int y, int cx, int cy, HDC hdcSrc, int x1, int y1, DWORD rop) {
-	WriteLog(TEXT("Function called : Bitblt(0x%X, %d, %d, %d, %d, 0x%X, %d, %d, 0x%X)\n"),
+	WriteLog(TEXT("Function called : BitBlt(0x%X, %d, %d, %d, %d, 0x%X, %d, %d, 0x%X)\n"),
 		(DWORD)hdc, x, y, cx, cy, (DWORD)hdcSrc, x1, y1, rop);
 
 	return originFunc(hdc, x, y, cx, cy, hdcSrc, x1, y1, rop);
