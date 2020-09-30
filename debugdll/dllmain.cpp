@@ -1,6 +1,7 @@
 ﻿#include "pch.h"
 
-BOOL(WINAPI* originFunc) (HDC, int, int, int, int, HDC, int, int, DWORD) = BitBlt;
+typedef BOOL(WINAPI* ORGFP) (HDC, int, int, int, int, HDC, int, int, DWORD);
+ORGFP originFunc = BitBlt;
 
 DWORD WriteLog(LPCTSTR lpszFormat, ...) {
 	TCHAR szLog[512];
